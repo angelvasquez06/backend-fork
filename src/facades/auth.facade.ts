@@ -1,6 +1,7 @@
 import {type Types, type ObjectId, type UpdateQuery, type QueryOptions} from 'mongoose';
 import User, {type IUser} from '../models/User';
 
+
 class AuthFacade {
 	public async saveuser(user: IUser) {
 		const newUser = new User(user);
